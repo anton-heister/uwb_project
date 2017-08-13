@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+# File: guessinggame.sh
 function check_input { 
 re='^[0-9]+$'  # pattern to identify integers
 tmp=$1
