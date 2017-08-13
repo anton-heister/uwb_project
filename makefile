@@ -1,6 +1,4 @@
 export TZ=America/Los_Angeles
-date_var=date +'%F %R %Z'
-
 
 README.md:guessinggame.sh
 	touch README.md
