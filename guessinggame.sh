@@ -5,7 +5,7 @@ re='^[0-9]+$'  # pattern to identify integers
 tmp=$1
 while ! [[ $tmp =~ $re ]]  # loop to check if input is integer
   do 
-    echo "Enter an INTEGER!"
+    echo "Enter a non-negative INTEGER!"
     read tmp 
     #read $1 
   done
@@ -13,11 +13,14 @@ while ! [[ $tmp =~ $re ]]  # loop to check if input is integer
 }
 
 echo 'Hi '$(whoami)'!'
-echo 'Guess how many files are there in the current directory:' $(pwd)
-echo 'IMPORTANT: We count all but dot files; directories are counted!'
-echo 'To go back to the terminal press ctrl+d'
+#echo 'Guess how many files are there in the current directory:' $(pwd)
+#echo 'IMPORTANT: We count all but dot files; directories are counted!'
+#echo 'To go back to the terminal press ctrl+d'
+echo 'Enter the number of files in the current directory:'
+read true_num_files
 echo '------------------------------------------------------------------|'
-true_num_files=$(ls -1 | wc -l)  # this one counts all but dot files in the directory (dirs are also files)
+echo 'And now guess how many files are there in the current directory!'
+#true_num_files=$(ls -1 | wc -l)  # this one counts all but dot files in the directory (dirs are also files)
 i=0  # num of iterations
 #re='^[0-9]+$'  # regex to identify integers
 num_files=$((true_num_files + 999))  # initialize with a wrong value so we enter the while loop

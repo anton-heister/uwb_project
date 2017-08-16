@@ -1,3 +1,3 @@
 # Final project for the Unix Workbench course
-- created on:  2017-08-13 16:57 PDT
-- number of lines in guessinggame.sh:  43 
+- created on:  2017-08-16 02:16 PDT
+- number of lines in guessinggame.sh:  46 
